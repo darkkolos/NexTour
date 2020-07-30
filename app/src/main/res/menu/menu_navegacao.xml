@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/paginaInicial"
+        android:icon="@mipmap/baseline_home_black_24dp"
+        android:title="Página inicial"/>
+    <item
+        android:id="@+id/paginaPerfil"
+        android:icon="@mipmap/baseline_account_box_black_24dp"
+        android:title="Meu Perfil"/>
+    <item
+        android:id="@+id/paginaCriarGuia"
+        android:icon="@drawable/icon_criar_guia"
+        android:title="Criar um guia turístico"/>
+    <item
+        android:id="@+id/paginaMeusGuias"
+        android:icon="@drawable/icon_meus_guias"
+        android:title="Meus guias turísticos"/>
+    <item
+        android:id="@+id/paginaAjuda"
+        android:icon="@mipmap/baseline_help_black_24dp"
+        android:title="Ajuda"/>
+    <item
+        android:id="@+id/paginaSair"
+        android:icon="@mipmap/baseline_exit_to_app_black_24dp"
+        android:title="Sair"/>
+    <item
+        android:id="@+id/paginaLogin"
+        android:icon="@mipmap/baseline_exit_to_app_black_24dp"
+        android:title="Iniciar sessão"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d7d7d7</color>
+    <color name="colorPrimaryDark">#0050b1</color>
+    <color name="colorAccent">#0080ff</color>
+    <color name="cinzentoEscuro">#717171</color>
+    <color name="cinzentoClaro">#d7d7d7</color>
+    <color name="azulEscuro">#0050b1</color>
+    <color name="azulClaro">#0080ff</color>
+    <color name="cinzentoMuitoClaro">#f3f3f3</color>
+
+
+
+    <!--
+
+    <color name="colorPrimary">#d7d7d7</color>
+    <color name="colorPrimaryDark">#0050b1</color>
+    <color name="colorAccent">#0080ff</color>
+    <color name="cinzentoEscuro">#717171</color>
+    <color name="cinzentoClaro">#d7d7d7</color>
+    <color name="azulEscuro">#0050b1</color>
+    <color name="azulClaro">#0080ff</color>
+    -->
+</resources>

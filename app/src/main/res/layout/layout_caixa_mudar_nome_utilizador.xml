@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_text_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:textColor="@color/cinzentoEscuro"
+                android:textColorHint="@color/cinzentoEscuro">
+
+                <EditText
+                    android:id="@+id/novo_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="12"
+                    android:hint="Novo nome"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:textColor="@color/cinzentoEscuro"
+                    android:textColorHint="@color/cinzentoEscuro"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/botao_confirmar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:background="@drawable/botao_redondo"
+                android:text="Confirmar" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

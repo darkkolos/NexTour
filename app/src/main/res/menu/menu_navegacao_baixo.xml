@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/paginaNovos"
+        android:icon="@mipmap/baseline_cached_black_24dp"
+        android:title="Novos"/>
+    <item
+        android:id="@+id/paginaPesquisar"
+        android:icon="@mipmap/baseline_search_black_24dp"
+        android:title="Pesquisar"/>
+    <item
+        android:id="@+id/paginaMapa"
+        android:icon="@mipmap/baseline_map_black_24dp"
+        android:title="Mapa"/>
+    <item
+        android:id="@+id/paginaFavoritos"
+        android:icon="@mipmap/baseline_favorite_black_24dp"
+        android:title="Favoritos"/>
+</menu>

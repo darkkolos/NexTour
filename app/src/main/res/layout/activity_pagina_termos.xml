@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dropdown_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinzentoMuitoClaro"
+    tools:context=".PaginaTermos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/titulo_guia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="85"
+                    android:text="Termos de uso da aplicação"
+                    android:textColor="@color/azulEscuro"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/descricao_guia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:justificationMode="inter_word"
+                    android:text="Neste texto é suposto encontrarem-se os termos de uso da aplicação. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id eros vel libero posuere laoreet. Nullam tempor, metus sed commodo porttitor, urna nisi luctus urna, sed vulputate velit massa nec diam. Suspendisse lacus sem, malesuada quis efficitur sed, tincidunt ac enim. Sed a lobortis diam. Vivamus et facilisis erat, et placerat lectus. Nunc vulputate eu arcu accumsan tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eu nibh elementum, rhoncus purus ut, feugiat lectus. Nullam pellentesque est quis lectus elementum, id volutpat nunc condimentum. Aliquam sagittis sem dapibus, suscipit nunc quis, congue sem. Donec aliquam iaculis elit faucibus imperdiet. Nulla luctus commodo nisl, eget ornare diam sollicitudin eu. Cras nec turpis neque. Duis fermentum nec est sit amet dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ex magna, ultricies dignissim erat nec, pretium aliquet velit.
+
+Curabitur sed augue auctor, viverra odio quis, pulvinar neque. Suspendisse potenti. Nunc at dui dictum, tempus est et, tempus nisi. Ut semper rhoncus placerat. Nulla facilisi. Nullam mi ex, mollis in dolor sed, bibendum rhoncus tellus. Etiam sagittis eget nisl id dapibus. Ut sed mi eget diam suscipit lacinia. Nam placerat elit nec tellus tempus, nec congue lectus condimentum.
+
+Mauris malesuada pharetra felis ac sodales. In id nisl auctor, tincidunt ante in, pellentesque nulla. Nullam tristique purus vel diam sagittis faucibus. Aenean at tellus dapibus, tempor purus porta, imperdiet nisl. Vestibulum tempus lobortis nisl, nec dapibus sem tristique ut. Vivamus efficitur vitae est et mollis. Donec suscipit accumsan nulla vitae facilisis. Suspendisse aliquam rutrum ligula quis vestibulum. Aenean venenatis ligula eu nisl tincidunt lacinia. Vivamus consectetur magna a ante congue, eget tristique magna venenatis. Proin tincidunt auctor tempor.
+
+Quisque dignissim congue turpis, eu imperdiet lacus accumsan ac. Aliquam malesuada malesuada dolor, non aliquam orci eleifend sed. Ut congue, tellus nec rutrum blandit, sem urna consequat felis, mattis tristique tortor sem id enim. In hac habitasse platea dictumst. Mauris quis magna at ipsum tincidunt auctor. Donec ut lectus sit amet ante congue vulputate. Donec porta tellus non bibendum volutpat. Ut ultricies, felis eget vehicula euismod, orci turpis rutrum ipsum, at venenatis ligula felis dignissim ipsum. Praesent maximus pharetra nulla at scelerisque. Fusce non rhoncus lacus. Vestibulum leo ligula, auctor nec tortor ut, euismod malesuada justo. Etiam aliquam tortor ac est viverra, id bibendum enim gravida. Cras sit amet pulvinar eros.
+
+Phasellus ac elit feugiat, eleifend erat vel, egestas arcu. Aenean semper faucibus dui quis consectetur. Donec hendrerit, risus ut lacinia iaculis, felis dolor scelerisque lacus, id congue nisi lacus sit amet mauris. Sed pretium sagittis fringilla. Donec interdum dolor tortor, ac rutrum felis pretium fringilla. Integer a convallis elit. Curabitur interdum sed enim sed consequat. Phasellus leo metus, luctus et interdum non, mollis nec velit. Fusce eget augue vel leo feugiat condimentum tincidunt eget lorem."
+                    android:textColor="@color/cinzentoEscuro"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu_cair"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/cinzentoClaro"
+        app:itemIconTint="@color/azulEscuro"
+        app:itemTextColor="@color/azulEscuro"
+        app:menu="@menu/menu_navegacao" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

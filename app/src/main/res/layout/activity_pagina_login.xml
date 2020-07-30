@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dropdown_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinzentoMuitoClaro"
+    tools:context=".PaginaLogin">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="289dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:contentDescription="@string/nome_app"
+                    android:id="@+id/imageView"
+                    android:layout_width="289dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/logotipo"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_text_input_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cinzentoEscuro"
+                    android:textColorHint="@color/cinzentoEscuro">
+
+                    <EditText
+                        android:id="@+id/emailInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:ems="12"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="30"
+                        android:textColor="@color/cinzentoEscuro"
+                        android:textColorHint="@color/cinzentoEscuro"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_text_input_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cinzentoEscuro"
+                    android:textColorHint="@color/cinzentoEscuro">
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:textColor="@color/cinzentoEscuro"
+                        android:textColorHint="@color/cinzentoEscuro"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/botaoLogin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Iniciar sessão"
+                    android:background="@drawable/botao_redondo"/>
+
+                <TextView
+                    android:id="@+id/loginTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:text="Ainda não tem conta?\n Faça aqui o seu registo"
+                    android:textAlignment="center"
+                    android:textColor="@color/cinzentoEscuro"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu_cair"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/cinzentoClaro"
+        app:itemIconTint="@color/azulEscuro"
+        app:itemTextColor="@color/azulEscuro"
+        app:menu="@menu/menu_navegacao" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
